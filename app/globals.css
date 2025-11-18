@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --gradient-1: linear-gradient(135deg, #B8D4F1 0%, #D4B5F9 100%);
+  --gradient-2: linear-gradient(135deg, #F9C5D5 0%, #B5F9E5 100%);
+  --gradient-3: linear-gradient(135deg, #D4B5F9 0%, #F9C5D5 100%);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  background: linear-gradient(135deg, #B8D4F1 0%, #D4B5F9 50%, #F9C5D5 100%);
+  background-attachment: fixed;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+}
+
+@layer utilities {
+  .glass-morphism {
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .neumorphic {
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow:
+      20px 20px 60px rgba(190, 190, 190, 0.2),
+      -20px -20px 60px rgba(255, 255, 255, 0.8);
+  }
+
+  .text-shadow-soft {
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  }
+}
