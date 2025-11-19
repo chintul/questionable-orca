@@ -7,10 +7,10 @@ interface ToastProps {
 export default function Toast({ message }: ToastProps) {
   return (
     <div className="fixed bottom-8 right-8 z-50 animate-slide-up">
-      <div className="glass-morphism rounded-2xl px-6 py-4 shadow-2xl">
+      <div className="neon-border glass-morphism rounded-2xl px-6 py-4 neon-glow">
         <div className="flex items-center space-x-3">
-          <span className="text-2xl animate-bounce">🐳</span>
-          <p className="text-lg font-semibold text-gray-800">{message}</p>
+          <span className="text-3xl animate-bounce">🐳</span>
+          <p className="text-lg font-black text-white">{message}</p>
         </div>
       </div>
     </div>
